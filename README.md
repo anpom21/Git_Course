@@ -1,6 +1,7 @@
 
-# 🧪 Exercise 0 – Git it Online!
-
+# Git Course
+First make your own repository and complete this exercise. When that its done you can continue with Exercise 1, 2 and 3.
+## Exercise 0
 ## 🗒️ Objective
 Create a brand-new Git repository from scratch, add a simple file or edit a README, commit your changes, and **push it to your own GitHub profile**. This is your first full Git cycle!
 
@@ -86,3 +87,5 @@ git push -u origin main
 ---
 
 Happy first push! 🚀
+
+All done for Exercise 0, now you can continue to Exercise 1, 2 and 3.
