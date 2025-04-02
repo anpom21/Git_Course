@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Step 1: Create and Initialize a New Git Repository
-mkdir git-work-simulation
-cd git-work-simulation
+mkdir E2_repository
+cd E2_repository
 git init
 
 echo "Setting up the Git exercise..."

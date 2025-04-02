@@ -2,8 +2,8 @@
 #!/usr/bin/env bash
 
 # Step 1: Create and Initialize a New Git Repository
-mkdir git-big-data
-cd git-big-data
+mkdir E3_repository
+cd E3_repository
 git init
 
 echo "Setting up the Git exercise..."
@@ -25,7 +25,7 @@ git switch BOSS_FILE
 
 # Step 2: Create the CSV File (Boss's Data)
 lorem_text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin turpis ut augue lacinia at ullamcorper dolor condimentum. Nunc elementum suscipit laoreet. Phasellus vel sem justo, a vulputate arcu. Sed rutrum elit nec elit lobortis ultrices. Quisque elit nulla, rutrum et varius sit amet, pulvinar eget purus. Aliquam erat volutpat. Fusce turpis lectus, vestibulum sed ornare sed, facilisis sit amet lacus. Nunc lobortis posuere ultricies. Phasellus aliquet cursus gravida. Curabitur eu erat ac augue rutrum mattis. Suspendisse sit amet urna nec velit commodo feugiat. Maecenas vulputate dictum diam, eu tempor erat volutpat in. Donec id nulla tortor, nec iaculis nibh. Pellentesque scelerisque nisl sit amet ligula dictum commodo. Donec porta mi in lorem porttitor id suscipit lacus auctor."
-repeat=2500
+repeat=25000
 output_file="Lorem ipsum.txt"
 
 # Clear or create the output file

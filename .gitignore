@@ -1,2 +1,4 @@
 *.md
 pre-commit
+
+*_repository/
