@@ -29,20 +29,17 @@ git log
 
 You should see a commit history where files were deleted or renamed. Identify the commits where `prime_number.py` and `fibonacci_number.py` last existed.
 
-To see the history of a specific file:
-
+Investigate the different commits in by copying the commit id and checking it out.
 ```bash
-USE CHATGPT!
+git checkout <commit_id>
 ```
-
 ---
 
 ## **🔄 Step 3: Restore Deleted Files**
 Once you find the commit where the files last existed, restore them:
 
 ```bash
-git checkout <commit-hash> -- prime_number.py
-git checkout <commit-hash> -- fibonacci_number.py
+USE CHATGPT!
 ```
 
 Verify that they are now back in the repository:

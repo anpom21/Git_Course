@@ -36,12 +36,12 @@ Learn the fundamentals of Git by working on a Python project that computes prime
 1. **Create a Python file** named `prime_numbers.py` and write code that checks if a number is prime **[COPY PASTE]**:
    ```python
    def is_prime(num):
-       if num < 2:
-           return False
-       for i in range(2, int(num ** 0.5) + 1):
-           if num % i == 0:
-               return False
-       return True
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
 
    def get_primes(n):
        primes = []
@@ -64,18 +64,24 @@ Learn the fundamentals of Git by working on a Python project that computes prime
    git add prime_numbers.py
    ```
    
-2. **Commit your changes**:
+2. **Check the status**:
+   ```bash
+   git status
+   ```
+3. **Commit your changes**:
    ```bash
    git commit -m "Add prime number computation"
    ```
    
-3. **Check the status**:
-   ```bash
-   git status
-   ```
+
 4. Now is a good time to **mark** the commit with a ```tag``` to indicate that up until this commit the stuff is working.
    ```bash
    git tag prime_number
+   ```
+   
+5. Check the history of your repository.
+   ```bash
+   git log
    ```
 ---
 
@@ -175,7 +181,7 @@ Learn the fundamentals of Git by working on a Python project that computes prime
    cd ../git_exercise
    ```
 
-2. **Modify `prime_numbers.py`** to print the number of primes found **[COPY PASTE]**:
+2. **Modify `prime_numbers.py`** (don't pull yet) to print the number of primes found **[COPY PASTE]**:
    ```python
    print(f"Number of primes found: {len(get_primes(m, n))}")
    ```
@@ -190,18 +196,40 @@ Learn the fundamentals of Git by working on a Python project that computes prime
    ```bash
    git push
    ```
-   
+   You will probably see something like this:
+   ![alt text](image.png)
+   Now this is something that will happen when you work in teams on bigger projects. And it will especially happen if you dont make branches in your projects. 
+   So **remember** to use branches to divide your projects!
+5. **If push didn't work try pulling first**:
+   ```bash
+   git pull
+   ```
+   If you see this:
+   ![alt text](image-2.png)
+   You can basically handle your divergent paths in different ways, I prefer merging as it is simple, and works.
+   ```bash
+   git config pull.rebase false  # merge
+   ```
+   Now try to pull again.
+   ```bash
+   git pull
+   ```
+   Now you should get a merge conflict.
+   ![alt text](image-3.png)
 ---
 
 ### Step 12: Resolve the Merge Conflict
 Merge conflicts are very common when working on projects and files which are frequently edited. Therefore it is important to know what a **merge conflict** entails and how you can quickly be on with your day.
 A merge conflict happens in Git when two branches have conflicting changes to the same part of a file, and git doesn't know how to automatically merge them. This requires manual intervention to resolve.
-1. **Go back to the cloned folder** and pull the latest changes to start the merge conflict:
-   ```bash
-   cd ../clone-folder
-   git pull
-   ```
-2. **Understanding** the merge conflict. 
+
+1. **Understanding** the merge conflict. 
+
+The first place you will see the merge conflict is in the terminal as mentioned before. Here it state all the files in which a merge conflict occured. In our instance it will look something like this:
+![alt text](image-3.png)
+You can see that a merge conflict occured in ```prime_numbers.py``` from the line:
+```CONFLICT (content): Merge conflict in prime_numbers.py```
+
+Now go to ```prime_numbers.py``` to resolve the merge conflict.
 
 A merge conflict is not dangerous fear not! Lets disect it together.
    
@@ -221,16 +249,8 @@ If you are using VScode the merge conflict will look like this:
 It can be resolved either by only keeping the code you want and deleting the rest or simply clicking one of the bottoms at the top.
 
 
-2. **Resolve the merge conflict** in `prime_numbers.py`. Combine the changes **[COPY PASTE]**:
-   ```python
-   def get_primes(m, n):
-       primes = []
-       for i in range(m, n+1):
-           if is_prime(i):
-               primes.append(i)
-       print(f"Number of primes found: {len(primes)}")
-       return primes
-   ```
+2. **Resolve the merge conflict** in `prime_numbers.py`. 
+Combine the changes 
 
 3. **Stage and commit** the resolved file.
 

@@ -36,12 +36,12 @@ git log
 
 Find the commit where `Lorem ipsum.txt` was added. Use that commit hash to restore it:
 ```bash
-git checkout <commit-hash> -- "Lorem ipsum.txt"
+Use the chat
 ```
 
 Confirm the file is back:
 ```bash
-ls -lh "Lorem ipsum.txt"
+ls 
 ```
 
 ---
@@ -55,25 +55,23 @@ git checkout READ_LOREM_IPSUM
 
 Copy the file into the current `main` branch:
 ```bash
-git checkout main
-git checkout READ_LOREM_IPSUM -- read_lorem.py
+You got it on your own
 ```
 
 ---
 
 ### 5. Create `main.py` to Run the Analysis
 
-Now create a new file `main.py` and add this content:
-```python
-from read_lorem import analyze_text
-
-if __name__ == "__main__":
-    analyze_text("Lorem ipsum.txt")
+Now run the read lorem python file
+```bash
+python3 read_lorem.py 
 ```
+Confirm the files works as expected.
+
 
 Save the file and stage the changes:
 ```bash
-git add main.py
+git add .
 git commit -m "Add main.py to run lorem analysis"
 ```
 
@@ -88,14 +86,6 @@ git add .gitignore
 git commit -m "Ignore big data file from future commits"
 ```
 
----
-
-### 7. Test Your Work
-
-Run the script to make sure it works:
-```bash
-python main.py
-```
 
 ---
 

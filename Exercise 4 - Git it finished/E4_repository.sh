@@ -1,9 +1,8 @@
 #!/bin/bash
-#!/usr/bin/env bash
 
 # Step 1: Create and Initialize a New Git Repository
-mkdir E3_repository
-cd E3_repository
+mkdir E4_repository
+cd E4_repository
 git init
 
 echo "Setting up the Git exercise..."
