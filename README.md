@@ -29,5 +29,7 @@ To begin working with these exercises:
 
 ## Continue learning
 I can highly reccommend [Learn Git Branching](https://learngitbranching.js.org/) it is a free intuitive learning platform for git. That delves into Branching, rebasing, cherrypicking, merging and much more git stuff.
-This [git practice GitHub]([url](https://github.com/danrs/git-practice)) also goes through a lot of cool features like resetting the repo, both soft, hard and mixed resets. It goes into stashing when you just want to save your changes and then check out another branch.
+
+This [git practice GitHub](https://github.com/danrs/git-practice) also goes through a lot of cool features like resetting the repo, both soft, hard and mixed resets. It goes into stashing when you just want to save your changes and then check out another branch.
+
 Secondly, [W3Schools](https://www.w3schools.com/git/exercise.asp?filename=exercise_getstarted1) also proivde some simple git exercise if you want to continue further.
