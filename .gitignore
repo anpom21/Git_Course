@@ -1,3 +1,4 @@
 *_repository/
 *.md
 *.png
+!*README.md
