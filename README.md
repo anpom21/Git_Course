@@ -15,7 +15,7 @@ To begin working with these exercises:
 
 2. **Navigate to the Desired Exercise**:
    ```bash
-   cd Git_Course/"Exercise 1 - Git it started"
+   cd Git_Course/Exercise_1_Git_it_started
    ```
    *(Replace with the appropriate exercise directory.)*
 
